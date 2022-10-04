@@ -8,7 +8,7 @@ Identify objects within your S3 buckets that are pubicly accessible. While an S3
 1. Create necessary permissions to perform this task. You can accomplish this with roles or user groups, a IAM user and a security credential. 
    - Whether you choose to use a role or user group, is up to you. I recommend making a policy that only allows interactions with your S3 buckets and nothing else. 
 ```
-   {
+{
     "Version": "2012-10-17",
     "Statement": [
         {
