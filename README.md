@@ -30,3 +30,10 @@ Identify objects within your S3 buckets that are pubicly accessible. While an S3
     ]
 }
 ```
+2. Setup your [profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-profiles.html) with AWS CLI
+3. Update the [python code](https://github.com/callmekujo/s3-object-scanner/blob/a6d42f613240bfb30314aad72e48fc6f28fb8e74/s3os.py#L8) where it says **replace-me** with the name of your profile. 
+4. Execute script
+```
+python3 s3os.py
+```
+5. Review the generated CSV file for objects that contain **allUsers** as part of the Grants. 
